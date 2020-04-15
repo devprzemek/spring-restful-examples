@@ -1,4 +1,4 @@
-package com.example.springdatabasevalidation.model;
+package com.example.model;
 
 import com.fasterxml.jackson.annotation.JsonTypeId;
 
@@ -26,6 +26,12 @@ public class Author {
     private int age;
 
     public Author() {
+    }
+
+    public Author(String name, String surname, int age){
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
     }
 
     public Long getId() {

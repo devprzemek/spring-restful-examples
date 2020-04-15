@@ -1,4 +1,4 @@
-package com.example.springdatabasevalidation.exceptionhandler;
+package com.example.exceptionhandler;
 
 public class AuthorNotFoundException extends RuntimeException {
     public AuthorNotFoundException(Long id) {

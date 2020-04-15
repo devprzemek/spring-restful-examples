@@ -1,6 +1,6 @@
-package com.example.springdatabasevalidation.repository;
+package com.example.repository;
 
-import com.example.springdatabasevalidation.model.Author;
+import com.example.model.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

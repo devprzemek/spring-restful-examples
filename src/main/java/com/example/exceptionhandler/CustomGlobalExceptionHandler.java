@@ -1,4 +1,4 @@
-package com.example.springdatabasevalidation.exceptionhandler;
+package com.example.exceptionhandler;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
