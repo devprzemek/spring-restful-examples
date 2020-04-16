@@ -15,12 +15,11 @@ public class SpringDatabaseValidationApplication {
     }
 
 
-
     @Bean
     CommandLineRunner initDatabase(AuthorRepository repository){
         return args -> {
-            repository.save(new Author("Przemyslaw", "Salamonik", 25));
-            repository.save(new Author("Jolanty", "Kowalski", 25));
+            repository.save(new Author("Will", "Sheer", 25));
+            repository.save(new Author("Andrew", "Prizemore", 25));
         };
     }
 
