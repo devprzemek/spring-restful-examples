@@ -8,18 +8,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringDatabaseValidationApplication {
+public class SpringRestfulApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringDatabaseValidationApplication.class, args);
+        SpringApplication.run(SpringRestfulApplication.class, args);
     }
-
 
     @Bean
     CommandLineRunner initDatabase(AuthorRepository repository){
         return args -> {
             repository.save(new Author("Will", "Sheer", 25));
-            repository.save(new Author("Andrew", "Prizemore", 25));
+            repository.save(new Author("Andrew", "Sizemore", 25));
         };
     }
 

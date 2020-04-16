@@ -1,4 +1,4 @@
-package com.example.exceptionhandler;
+package com.example.error;
 
 public class AuthorNotFoundException extends RuntimeException {
     public AuthorNotFoundException(Long id) {

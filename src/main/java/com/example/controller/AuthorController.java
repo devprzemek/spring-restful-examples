@@ -1,6 +1,6 @@
 package com.example.controller;
 
-import com.example.exceptionhandler.AuthorNotFoundException;
+import com.example.error.AuthorNotFoundException;
 import com.example.model.Author;
 import com.example.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
