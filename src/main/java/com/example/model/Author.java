@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Author {
@@ -15,10 +16,12 @@ public class Author {
     @GeneratedValue
     private Long id;
 
-    @NotEmpty
+    @NotEmpty(message = "Please provide name")
+    @Size(min = 1, max = 50)
     private String name;
 
-    @NotEmpty
+    @NotEmpty(message = "Please provide surname")
+    @Size(min = 1, max = 50)
     private String surname;
 
     @NotNull(message = "Please provide age")
