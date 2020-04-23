@@ -52,7 +52,6 @@
             <scope>test</scope>
         </dependency>
 
-
         <!-- test patch operation need this -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -65,6 +64,13 @@
             <artifactId>spring-security-test</artifactId>
             <version>5.2.2.RELEASE</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-calendar -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-calendar</artifactId>
+            <version>v3-rev411-1.25.0</version>
         </dependency>
 
     </dependencies>

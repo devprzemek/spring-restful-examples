@@ -16,9 +16,9 @@ class SpringRestfulApplicationTests {
     private EventPlanner eventPlanner;
 
     @Test
-    void shouldNotCreateEvent() {
+    void should_not_create_event() {
         assertThrows(ConstraintViolationException.class, () -> {
-            eventPlanner.createAuthorConference(LocalDateTime.now(), LocalDateTime.of(2020, 3, 18, 17, 0, 0));
+            eventPlanner.createAuthorConference(LocalDateTime.now(), LocalDateTime.of(2020, 3, 18, 17, 0, 0), "");
         });
     }
 
